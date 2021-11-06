@@ -27,5 +27,3 @@ coverage
 benchmarks/graphs
 
 
-user/node_modules
-user/package-lock.json
