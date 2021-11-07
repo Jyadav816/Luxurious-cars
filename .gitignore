@@ -26,4 +26,6 @@ coverage
 # Benchmarking
 benchmarks/graphs
 
-
+ 
+user1/node_modules
+user1/package-lock.json
