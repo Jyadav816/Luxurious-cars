@@ -2,7 +2,7 @@ import react from 'react'
 import {Col, Row, Form, Input, Button,} from 'antd'
 import {Link} from "react-router-dom"
 import { useDispatch} from "react-redux"
-import { userRegister} from '../redux/apicalls/uAction'
+import { uReg} from '../redux/apicalls/uAction'
 
 
 function Signup() {
@@ -10,7 +10,7 @@ function Signup() {
 
 
     function onFinish(values) {
-        dispatch(userRegister(values))
+        dispatch(uReg(values))
         console.log(values)
     
     }
@@ -26,13 +26,13 @@ function Signup() {
                     <Form layout='vertical' className="log" onFinish={onFinish}>
                         <h1>Signup</h1>
                         <hr />
-                        <Form.Item name="Please enter a username" label="Username" rules={[{required : true}]}>
+                        <Form.Item name="username" label="Username" rules={[{required : true}]}>
                             <Input/>
                         </Form.Item>
                         <Form.Item name="password" label="Password" rules={[{required : true}]}>
                             <Input/>
                         </Form.Item>
-                        <Form.Item name="confirm password" label=" Confirm Password" rules={[{required : true}]}>
+                        <Form.Item name="cpassword" label=" Confirm Password" rules={[{required : true}]}>
                             <Input/>
                         </Form.Item>
 

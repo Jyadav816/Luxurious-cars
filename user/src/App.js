@@ -6,8 +6,6 @@ import Signup from './templates/Signup';
 import BookingCar from './templates/BookingCar';
 import Home from './templates/Home';
 import 'antd/dist/antd.css'
-import { Col, Row} from 'antd'
-
 function App() {
   return (
     <div className="App">
