@@ -1,4 +1,4 @@
-import react, { useLayoutEffect, useEffect } from 'react'
+import react, { useLayoutEffect, useEffect, useState } from 'react'
 import Default from '../components/Default'
 import { useSelector, useDispatch} from 'react-redux'
 import { requireCars} from '../redux/apicalls/carsApi'
@@ -8,17 +8,23 @@ function Home() {
     const {cars} = useSelector(state=>state.carStore)
     const dispatch = useDispatch()
     const {loading} = useSelector(state=>state.alretStore)
-
+    const [searchKey, setSearchKey] = useState("")
 
     useEffect(() => {
         dispatch(requireCars())
     }, [])
+
+    function inputHandler(value) {
+        setSearchKey(value)
+        console.log(searchKey)
+    }
     
     return (
         <Default>
             {loading == true && (<Loader/>)}
+            <input value={searchKey} onChange={(event)=> inputHandler(event.target.value)} type="text"/>
             <Row gutter={10}>
-                {cars.map(car=>{
+                {cars.filter(obj=>obj.carName.toLowerCase().includes(searchKey.toLowerCase())).map(car=>{
                     return <Col lg={5} sm={24} xs={24}>
                         <div className="object bs1">
                             <img src={car.image} className="carpic"/>

@@ -16,11 +16,9 @@ function Login() {
     return (
         
         <div className="login">
-            <Row gutter={16}>
-                <Col lg={16}>
-                    <h1 className="lux">Luxurious Cars</h1>
-                </Col>
+            <Row gutter={16} justify="center">
                 <Col lg={8}>
+                <h1 className="lux">Luxurious Cars</h1>
                     <Form layout='vertical' className="log" onFinish={onFinish}>
                         <h1>Login</h1>
                         <hr />
