@@ -10,8 +10,7 @@ function Signup() {
 
 
     function onFinish(values) {
-        
-        
+      
         dispatch(uReg(values))
 
         console.log(values)

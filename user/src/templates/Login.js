@@ -21,7 +21,6 @@ function Login() {
                 <h1 className="lux">Luxurious Cars</h1>
                     <Form layout='vertical' className="log" onFinish={onFinish}>
                         <h1>Login</h1>
-                        <hr />
                         <Form.Item name="username" label="Username" rules={[{required : true}]}>
                             <Input/>
                         </Form.Item>
