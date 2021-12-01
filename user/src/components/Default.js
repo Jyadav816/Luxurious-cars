@@ -19,11 +19,6 @@ function Default(props) {
                     Home
             </a>
             </Menu.Item>
-            <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-                    Booking
-            </a>
-            </Menu.Item>
             <Menu.Item onClick={onClick}>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
                     Signout
