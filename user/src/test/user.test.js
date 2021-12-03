@@ -28,5 +28,75 @@ describe("unit test for login page",function(){
       done();
     });
   });
+});
 
+describe("unit test for login page",function(){
+
+  // #1 should return home page
+
+  it("should return home page",function(done){
+
+    // calling home page api
+    server
+    .get("/login/")
+    .send('username :test,password : test123')
+    .expect("Content-type",/json/)
+    .expect(200) // THis is HTTP response
+    
+    .end(function(err,res){
+      // HTTP status should be 200
+      res.status.should.equal(200);
+      // Error key should be false.
+      
+      done();
+    });
+  });
+});
+
+
+describe("unit test for login page",function(){
+
+  // #1 should return home page
+
+  it("should return home page",function(done){
+
+    // calling home page api
+    server
+    .get("/signup/")
+    .send('username :test,password : test123')
+    .expect("Content-type",/json/)
+    .expect(200) // THis is HTTP response
+    
+    .end(function(err,res){
+      // HTTP status should be 200
+      res.status.should.equal(200);
+      // Error key should be false.
+      
+      done();
+    });
+  });
+});
+
+
+describe("unit test for login page",function(){
+
+  // #1 should return home page
+
+  it("should return home page",function(done){
+
+    // calling home page api
+    server
+    .get("/booking/:carid/")
+    .send('username :test,password : test123')
+    .expect("Content-type",/json/)
+    .expect(200) // THis is HTTP response
+    
+    .end(function(err,res){
+      // HTTP status should be 200
+      res.status.should.equal(200);
+      // Error key should be false.
+      
+      done();
+    });
+  });
 });
