@@ -1,0 +1,26 @@
+[
+   {
+      "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Aston_Martin_One-77_%288701486190%29_%28cropped%29.jpg/1920px-Aston_Martin_One-77_%288701486190%29_%28cropped%29.jpg",
+      "carName":"one-77",
+      "carBrand":"Aston Martin",
+      "pricePerDay":2700,
+   },
+   {
+      "image":"http://d20efxdfa6g8fm.cloudfront.net/wp-content/uploads/2016/08/12163018/image0153-1024x617.jpg",
+      "carName":"Chiron",
+      "carBrand":"Bugati",
+      "pricePerDay":3500,
+   },
+   {
+      "image":"http://d20efxdfa6g8fm.cloudfront.net/wp-content/uploads/2016/08/12163045/image0193-1024x512.jpg",
+      "carName":"Huayra BC",
+      "carBrand":"Pagani",
+      "pricePerDay":3200,
+   },
+   {
+      "image":"http://d20efxdfa6g8fm.cloudfront.net/wp-content/uploads/2016/08/12163103/image0232.jpg",
+      "carName":"Lykan Hypersport",
+      "carBrand":"W Motors",
+      "pricePerDay":4000,
+   },
+]
